@@ -1,0 +1,9 @@
+1. Workspace walkthrough
+ - src/
+ - node_modules
+ - package.json
+ - tscconfig.app.json
+ - tsconfig.json
+ - tscconfig.spec.json
+ - angular.json
+ - karma.conf.json
