@@ -1,4 +1,7 @@
 ## HOTEL INVENTORY ANGULAR APP
+https://youtu.be/3qBXWUpoPHo?t=9729
+
+
 1. Check to see if Angular CLI is available
  - **ng version** To see if there is Angular is available
  - If not available 
