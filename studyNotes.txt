@@ -7,3 +7,11 @@
  - tscconfig.spec.json
  - angular.json
  - karma.conf.json
+
+2. Mono Repos 
+3. /src files
+4 angular.json file
+ - projectType
+ - srcFolder
+ - options
+5 To run the app 
