@@ -15,3 +15,28 @@
  - srcFolder
  - options
 5 To run the app 
+ a. component
+  - to build component *ng g c {component name}*
+  - will create coponent folder with 4 files
+   * .ts => for source code
+   * .spec.ts => for tests
+   * .scss/.css => for component styling
+   * .html => for the view rendering
+  - @ngModule - to give metadata info to compiler
+   * selector => the html tag of the component
+   * templateUrl => path to html file of component
+   * styleUrl => path to style sheet of component
+  - A component must be added to root component ie app.component.html or to 
+  a component defined in the root comopnent or it will not be rendered.
+
+ b. binding - to displat data from the .ts files to the .html files for rendering
+   i. interpolation binding {}
+   ii. html prpoerty binding <div [innerText]="variableName"
+   iii. event binding (onClick)
+
+c. directives - to change appearance and behaviour of DOM element
+   i. Structural directives - can change DOM structure by modifying, adding or removing 
+   elements eg *ngIf *ngFor *ngSwitch
+   ii. Attribute directives - can only modify DOM elelemt eg ngClass ngStyle
+ 
+d. Pipes

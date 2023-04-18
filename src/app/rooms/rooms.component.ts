@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Rooms, RoomsList } from './rooms';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'hinv-rooms',
@@ -27,7 +28,8 @@ export class RoomsComponent {
       price: 5000,
       checkinTime: new Date('11-Nov-2022'),
       checkoutTime: new Date('12-Nov-2022'),
-      photos: "https://wallpapercave.com/wp/wp6181354.jpg"
+      photos: "https://wallpapercave.com/wp/wp6181354.jpg",
+      rating: 3.5999
     },
     {
       roomNumber: 2,
@@ -36,7 +38,8 @@ export class RoomsComponent {
       price: 25000,
       checkinTime: new Date('11-Nov-2022'),
       checkoutTime: new Date('16-Nov-2022'),
-      photos: "https://www.publicdomainpictures.net/pictures/100000/velka/hotel-room-1408755885Nti.jpg"
+      photos: "https://www.publicdomainpictures.net/pictures/100000/velka/hotel-room-1408755885Nti.jpg",
+      rating: 4.6900
     },
     {
       roomNumber: 3,
@@ -45,7 +48,8 @@ export class RoomsComponent {
       price: 50000,
       checkinTime: new Date('11-Nov-2022'),
       checkoutTime: new Date('20-Nov-2022'),
-      photos: "https://www.publicdomainpictures.net/pictures/80000/velka/hotel-room-1395584662zbr.jpg"
+      photos: "https://www.publicdomainpictures.net/pictures/80000/velka/hotel-room-1395584662zbr.jpg",
+      rating: 4.1223
     }
   ]
 

@@ -1,6 +1,5 @@
 ## HOTEL INVENTORY ANGULAR APP
-https://youtu.be/3qBXWUpoPHo?t=14501
-
+https://youtu.be/3qBXWUpoPHo?t=17186
 
 1. Check to see if Angular CLI is available
  - **ng version** To see if there is Angular is available
@@ -28,3 +27,6 @@ https://youtu.be/3qBXWUpoPHo?t=14501
   -- the tag is defined in component.ts property selector: {tag-name}
   -- added in html as \<tagname\\>
 
+6. To add angular bootstrap
+ - To install *npm i ngx-bootstrap*
+ - To add to project *ng add ngx-bootstrap*
