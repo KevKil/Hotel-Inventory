@@ -6,12 +6,16 @@ import { AppComponent } from './app.component';
 import { RoomsComponent } from './rooms/rooms.component';
 import { PipesComponent } from './pipes/pipes.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { RoomsListComponent } from './rooms-list/rooms-list.component';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     RoomsComponent,
-    PipesComponent
+    PipesComponent,
+    RoomsListComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,

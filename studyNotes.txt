@@ -39,4 +39,42 @@ c. directives - to change appearance and behaviour of DOM element
    elements eg *ngIf *ngFor *ngSwitch
    ii. Attribute directives - can only modify DOM elelemt eg ngClass ngStyle
  
-d. Pipes
+d. Pipes - for data transformation. Does not change the actual object. Changes how obj 
+appear in view
+   e.g DatePipe, UpperCase, Currency, Decimal, Percent, Json --displays output as JSON for devt only--,
+   Slice, Async
+   - Can use locale for date and currency pipes. This can be set via locale in angular.json in sourceLocale field
+   - For slice pipe in the range the last value is exclusive
+
+e. LifeCycleHooks and Component Communication
+
+-- component communication is how different components will react
+   1. Using @Input and @Output
+      @Input --> passes data from parent to child component. Only concerned with rendering and not data manipulation.
+      This is beacause a child component should maintain immutability of data and should not manipulate data
+      @Output --> passes data from parent to child as an event emitter for processing maintaining immutability.
+      A new object instance will be created in the parent component
+   2. Using @ViewChild and @ContentChild
+      @ViewChild --> used to access child component from parent component after viewInit. Used mostly for async code which will 
+      be accessed later in the running of the lifecycle after ngOnInit() runs in the parent component
+      Can be used to dynamically load templates and components
+   3. Using services
+
+-- lifecycle hooks help to hook to events which will happen to components. Implimented on components
+   i. ngOnChanges --> only applied to components with @Input proprty. Used to managed change detection manually
+      the changes should be immutable i.e to not modify the existing data but create new data.
+      The component view will only be rerenderd in browser if any change is dtected
+      In the child component.ts
+       `@Component({
+         // regualar info,
+         changeDetection: ChangeDetectionStrategy.OnPush
+       })`
+   ii. ngOnInit --> This is for the view after initialisatiion of components via constructor. Logic should
+      be here.
+   iii. doCheck --> Used to check if any lifecycle hook is called. Will be used to check if any event is emmited or
+      changes done to data.
+      Costly to use not recommended to run.
+   iv. ngAfterViewInit --> Used to load a component after init of view with ngOnInit. The component becomes accessible 
+      after rendering the Initial view. It is used with @ViewChild
+   v. ngAfterViewChecked --> Used to do extra modifications or run functions in 
+      the method after loading of components. 
